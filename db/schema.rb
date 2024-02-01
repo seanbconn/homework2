@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_01_074417) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_01_075057) do
   create_table "movies", force: :cascade do |t|
     t.string "Title"
     t.string "Year_Released"
     t.string "MPAA_Rating"
     t.string "Studio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "top_casts", force: :cascade do |t|
+    t.string "movie_id"
+    t.string "actor_name"
+    t.string "character_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
