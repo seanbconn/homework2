@@ -21,7 +21,7 @@ new_movie["MPAA_Rating"] = "PG-13"
 new_movie["Studio"] = "Warner Bros."
 new_movie.save
 
-puts "movies: #{Movie.all.count}"
+# 
 
 
 end
